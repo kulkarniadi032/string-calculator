@@ -1,15 +1,18 @@
 
-let sum = 0;
-
-let negativeNumberArray = [];
-
 
 function handleStringCalculator(e){
+    
+    let sum = 0;
+    
+    let negativeNumberArray = [];
+
     e.preventDefault();
 
     let inputStr = document.getElementById('inputValue').value;
-
+    console.log(inputStr);
+    
     let resultArray = inputStr.match(/-?\d+/g);
+    console.log(resultArray);
 
     try {
         if (!resultArray) {
